@@ -1,4 +1,5 @@
 .btn {
+  &,
   &:link,
   &:visited {
     text-transform: uppercase;
@@ -12,6 +13,10 @@
     position: relative;
     /*для кнопки after*/
     font-size: $default-font-size;
+
+    //Change for the <button> element
+    border: none;
+    cursor: pointer;
   }
 
   &:hover {
@@ -24,7 +29,9 @@
     }
   }
   /*clicked*/
-  &:active {
+  &:active,
+  &:focus {
+    outline: none;
     transform: translateY(-1px);
     box-shadow: 0 .5rem 1rem rgba($color-black,.2);
   }
@@ -87,6 +94,7 @@
 
   &:active {
     box-shadow: 0 0.5rem 2rem grba($color-black, .15);
-    transform: translateY(0px);
+    transform: translateY(0);
   }
+
 }

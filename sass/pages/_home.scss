@@ -43,11 +43,11 @@
     rgba($color-white, .9) 50%,
     transparent 50%),
   url(../img/nat-10.jpg);
-  background-size: cover; //cover same as 100%
+  background-size: 100%; //cover same as 100%
   border-radius: 3px;
   box-shadow:  0 1.5rem 4rem grba($color-black, .2);
 
-  height: 50rem;
+  height: 51rem;
 
   &__form {
     width: 50%;
